@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "node \"${CLAUDE_PROJECT_DIR:-.}/.claude/hooks/format-frontend.mjs\"",
+            "timeout": 20,
+            "statusMessage": "Formateando el frontend con Prettier"
+          }
+        ]
+      }
+    ]
+  }
+}
