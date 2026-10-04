@@ -22,14 +22,22 @@ Borra el ejemplo de abajo cuando escribas el primero.
 
 ## Prompt 1
 
-**Modelo:** Opus 1M xHigh
+**Modelo:** Opus 5.5
 **Herramienta:** Claude Code
 
 ```
-Este es el ejemplo. Bórralo.
-
-El prompt va aquí dentro, entero y con sus saltos de línea,
-para que se sepa dónde empieza y dónde acaba.
+A partir de ahora actualiza el fichero prompts.md (siguiendo las instrucciones y formato) indicado en el fichero con cada prompt que te lance
 ```
 
-**Qué salió:** (opcional, una línea) funcionó a la primera / tuve que insistir / me inventó una ruta que no existe.
+**Qué salió:** se sustituyó el ejemplo y se registró el prompt 1.
+
+## Prompt 3
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+Escribe la spec viva de proyecto en el directorio docs/spec-viva/LF.md con el formato y las reglas duras descritas en el fichero README.md
+```
+
+**Qué salió:** spec de cuentas y acceso (13 requisitos, 43 escenarios) con borrador de la parte B; falta comprobar requisitos a mano.
