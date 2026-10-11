@@ -1,4 +1,6 @@
 ## Matriz de trazabilidad inicial
+**Scenarios del requisito:** 3
+**Scenarios cubiertos:** 0
 
 | # | Scenario (en una línea) | Prueba que lo cubre (nombre en la suite) | Estado | Si «No lo sé», qué faltó |
 |---|---|---|---|---|
@@ -29,8 +31,9 @@
 
 1. **Cubiertos que creía antes de mirar / cubiertos de verdad:** 
 
-**Scenarios cubiertos antes de mirar:** 20 
+**Scenarios cubiertos antes de mirar:** 3
 **Scenarios cubiertos antes de escribir nuevos tests:** 0
+**Scenarios cubiertos al final:** 3
 
 2. **Scenario del que no supe si era hueco de test o hueco de spec, y por qué:** 
  - openspec/specs/tasks/spec.md, scenario «Responsable sin nombre»: dice que las iniciales llegan «para que la interfaz pueda representarlo sin recurrir a su email».                                          

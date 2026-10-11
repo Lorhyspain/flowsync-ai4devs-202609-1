@@ -138,3 +138,14 @@ haz el commit y abre el PR
 ```
 
 **Qué salió:** commit de la matriz, los tests y prompts.md, y PR abierto.
+
+## Prompt 12
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+Añade a la PR los cambis que he hecho en el fichero lf.md
+```
+
+**Qué salió:** commit con los cambios de LF.md (números de la matriz inicial y de la línea 1) y push a la rama del PR.
