@@ -13,7 +13,7 @@ Requisito de `openspec/specs/tasks/spec.md`. Suite revisada: `backend/tests/` �
 | 2 | Ninguna tarea, suelta o en la lista, trae email ni datos de acceso en su `assignee` | — | No cubierto | |
 | 3 | Si el responsable se registró sin nombre, `assignee.fullName` llega nulo y las iniciales siguen llegando | — | No lo sé | Se parecen `Auth \| iniciales › sin nombre, las iniciales salen del email` y `Auth \| registro › una cuenta puede quedarse sin nombre`, pero miran la cuenta en login/registro, no una tarea |
 
-> Al revisar (sin tocar código): la tarea suelta (`GET /tasks/:id`) arma el `assignee` con `TaskAssigneeTransformer` (`id`, `fullName`, `initials`), pero la lista, la creación y el cambio de estado usan `TaskTransformer` → `UserTransformer`, que **sí incluye `email`**. El test que falta para la fila 2 debería salir rojo en la lista.
+> Al revisar (sin tocar código): la tarea suelta (`GET /tasks/:id`) arma el `assignee` con `TaskAssigneeTransformer` (`id`, `fullName`, `initials`), pero la lista, la creación y el cambio de estado usan `TaskTransformer` → `UserTransformer`, que **sí incluye `email`** (y `createdAt`/`updatedAt` de la cuenta). El test que falta para la fila 2 debería salir rojo en la lista.
 
 ## Las tres líneas
 
