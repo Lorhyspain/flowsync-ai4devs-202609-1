@@ -16,20 +16,81 @@ distinto, y sin este archivo no se distinguen.
 - Incluye también los que **no funcionaron**. Suelen ser los más útiles de leer.
 - `Modelo` y `Herramienta` en todos. Si cambiaste de una a otra a mitad, se nota aquí.
 
-Borra el ejemplo de abajo cuando escribas el primero.
-
 ---
 
 ## Prompt 1
 
-**Modelo:** Opus 1M xHigh
+**Modelo:** Opus 5.5
 **Herramienta:** Claude Code
 
 ```
-Este es el ejemplo. Bórralo.
-
-El prompt va aquí dentro, entero y con sus saltos de línea,
-para que se sepa dónde empieza y dónde acaba.
+Registra a partir de ahora en el fichero prompts.md todos los prompts que te haga con el formato especificado en dicho fichero
 ```
 
-**Qué salió:** (opcional, una línea) funcionó a la primera / tuve que insistir / me inventó una ruta que no existe.
+**Qué salió:** funcionó a la primera; se borró el ejemplo y se registró este prompt.
+
+## Prompt 2
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+Verifica si en este proyecto hay tests codificados
+```
+
+**Qué salió:** solo hay tests functional de auth en el backend (4 ficheros); nada de tasks, ni unit, ni frontend.
+
+## Prompt 3
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+Lee los escenarios de la spec viva de esta feature y los tests existentes y una matriz de trazabilidad con el formato indicado en el fichero README.md apartado A.1 en la siguiente ubicación: docs/verificacion/LF.md
+```
+
+**Qué salió:** matriz creada: 3 scenarios, 0 cubiertos (1 no cubierto, 2 «no lo sé» por tests de auth que se parecen pero no miran tareas).
+
+## Prompt 4
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+En el fichero LF.md genera las tres líneas que se requieren en esta práctica, en la parte B, pero no las rellenes, eso lo haré yo más adelante.
+```
+
+**Qué salió:** añadido el apartado con las tres líneas vacías al final de LF.md.
+
+## Prompt 5
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+En el fichero en la sección "Las tres líneas", apartado 1 incluye al final del punto 1. el cuadro de resumen con los test unitarios actualmente incluidos en el proyecto.
+```
+
+**Qué salió:** añadida la tabla resumen bajo el punto 1; se aclara que no son unitarios sino functional de auth.
+
+## Prompt 6
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+en que rama estoy?
+```
+
+**Qué salió:** respondió la rama actual.
+
+## Prompt 7
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code
+
+```
+Lee la spec viva del proyecto y los test existentes y actualiza la matriz de trazabilidad inicial, incluida en el fichero LF.md
+```
+
+**Qué salió:** matriz re-verificada abriendo los 20 tests: sigue 0/3; afinado el «qué faltó» y añadida nota de que la lista serializa el `assignee` con `email` (`TaskTransformer` → `UserTransformer`).
